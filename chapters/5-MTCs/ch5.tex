@@ -2148,7 +2148,7 @@ We now get the following theorem:
 
 \subsubsection{The Drinfeld center}
 
-A quantum double modular category is a special type of modular category. In practice, many of the modular categories one deals with are quantum double modular categories so it is good to be aware of how they work. For instance, the modular categories appearing in the world of subfactors \cite{muger2001subfactorsA, mueger2001subfactorsB} and tensor networks \cite{bultinck2017anyons, dubail2015tensor} are all quantum double modular categories.
+A quantum double modular category is a special type of modular category. In practice, many of the modular categories one deals with are quantum double modular categories so it is good to be aware of how they work. For instance, the modular categories appearing in the world of subfactors \cite{muger2001subfactorsA, mueger2001subfactorsB} and tensor networks \cite{bultinck2017anyons, dubail2015tensor} are all quantum double modular categories. 
 
 At the heart of quantum doubles is a construction known as the {\em Drinfeld center}. In its most basic form the Drinfeld center induces an assignment
 
@@ -2160,6 +2160,12 @@ $$\cZ: (\text{spherical fusion categories})\xrightarrow{}(\text{modular categori
 
 This theorem is fantastic because it allows one to construct modular categories using much less data than would otherwise be neccecary. Without needing a braiding (non-degenerate or otherwise) the Drinfeld center allows one to construct a modular category. This makaes the Drinfeld center an abundant source of modular categories. We call an modular category $\cD$ a quantum double if it is of the form $\cD\cong \cZ(\cC)$ for some spherical fusion category $\cC$.
 
+
+\begin{rem}
+Given any spherical fusion category $\cC$, there is a construction known as the {\em Levin-Wen model}\cite{levin2005string} which takes as input $\cC$ and produces as output a topologically ordered gapped Hamiltonian on the hexagonal lattice. The anyons in this topological order are described by the modular category $\cZ(\cC)$, and its chiral central charge is $c_-=0$. Levin-Wen Hamiltonians are common toy-models for topological order, which give quantum double modular categories increased importance. The fact that the anyon theory $\cZ(\cC)$ is compatible with the chiral central charge $c_-=0$ comes from combining propositions \ref{time-reversal-centers} and \ref{twists-of-conjugate}.
+\end{rem}
+
+
 We now define the Drinfeld center. The Drinfeld center is a somewhat direct categorification of the usual notion of center for finite groups. If $G$ is a finite group, its center is defined as follows:
 
 $$Z(G)=\{g\in G | gh=hg \,\, \forall h\in G\}.$$
@@ -2169,7 +2175,6 @@ The first guess at $\cZ(\cC)$ is thus
 $$\cZ(\cC)=\{A\in \cC | A\otimes B \cong B\otimes A \,\, \forall B\in \cC\}.$$
 
 This is almost correct, but not quite. The issue is that $\cZ(\cC)$ is not a braided monoidal category yet. Even though $A\otimes B\cong B\otimes A$ for all $A,B\in \cZ(\cC)$, we don't have a distinguished choice of isomorphism. A braided monoidal category requires a distinugished isomorphism $\beta_{A,B}:A\otimes B\xrightarrow{} B\otimes A$. Moreover, these distinguished isomorphisms are required to satisfy the hexagon equations. Hence, we make a new definition of center which keeps track of the choice of isomorphism and enforces the hexagon equation along the way.
-
 
 \begin{defn} The Drinfeld center $\cZ(\cC)$ of a monoidal category $\cC$ is a braided monoidal category defined as follows:
 
@@ -2197,11 +2202,12 @@ The associativity, unitors, and composition in $\cZ(\cC)$ are inherited from $\c
 \begin{prop} For all monoidal categories $\cC$, the Drinfeld center $\cZ(\cC)$ is a well-defined braided monoidal category.
 \end{prop}
 \begin{proof} Since morphisms in $\cZ(\cC)$ are a subspace of morphisms in $\cC$, commutative diagrams don't change when going from $\cC$ to $\cZ(\cC)$. Hence, the triangle and pentagon axioms for $\cZ(\cC)$ follow immediately from the triangle and pentagon axioms on $\cC$. One thing to be checked is that evaluation/co-evaluaiton satisfy the compatibility condition required to a morphism in $\cZ(\cC)$, but this is straightforward. We remark on the hexagon identities. The condition imposed on $\upbeta_{A,B\otimes C}$ given is technically incorrect. To make the parentheses work in the braiding one has to add associators, and impose the longer condition
-
+ 
 $$\upbeta_{A,B\otimes C}=\alpha_{C,A,B}^{-1}\circ \left(\id_{B}\otimes \upbeta_{A,C}\right)\circ \alpha_{A,C,B}\circ\left(\upbeta_{A,B}\otimes \id_C\right)\circ \alpha^{-1}_{A,B,C}.$$
 
 This condition makes the second hexagon identity tautological. Similarly, the definition of tensor product given is not strictly correct - one must add the correct associator terms, making the first hexagon identity immediate. Lastly one must verify the half-braidings defined on the tensor unit/tensor product are actually half braidings, i.e., that they satisfy the hexagon condition. These follow from straightforward computations, which we leave as exercises.
 \end{proof}
+
 
 \subsubsection{Mueger's theorem}
 
@@ -2281,6 +2287,19 @@ $$p_{\overline{\cC}}^{+}=\overline{p_{\cC}^{-}}, \qquad\qquad p_{\overline{\cC}}
 \begin{proof} From lemma \ref{twist-alternatives-lemma}, we can see that the twists of the reversed theory are equal to the inverses of the twists in the original theory. By Vafa's theorem (theorem \ref{vafa-theorem}) the twist values are roots of unity, and thus their inverses are equal to their complex conjugates, giving the desired result.
 \end{proof}
 
+\begin{rem}
+One might wonder why we don't define the time-reversal conjugate of an anyon theory in terms of its opposite category $\cC^{\op}$, because naively the opposite category is in a real sense reversing causality. The answer for this is as follows. Given a monoidal category $\cC$, one can endow $\cC^{\op}$ with the structure of a monoidal category by the formula $A^{\op}\otimes^{\op}B^{\op}=(B\otimes A)^{\op}$, carrying through the associativity and unit maps. Given a braiding on $\cC$, on then naturally gets a braiding on $\cC^{\op}$ by the formula $\beta_{A^{\op},B^{\op}}^{\op}=\beta_{A,B}^{\op}$. Passing through the rest of the structure, one can show that the opposite of a spherical fusion (resp. pre-modular, modular) category is naturally a spherical fusion (resp. pre-modular, modular) category. Thus, $\cC^{\op}$ {\em is} a valid guess as the definition of the time reversal conjugate. However, it is straightforward to show that $\cC^{\op}\simeq \cC$ as pre-modular categories for all pre-modular categories! (\cite{etingof2016tensor}, Exercise 8.1.9). This shows at a mathematical level why $\cC^{\op}$ is not a good choice of time reversal conjugate.
+\end{rem}
+
+\begin{prop}\label{time-reversal-centers} Let $\cC$ be a spherical fusion category. There is an equivalence of pre-modular categories $\cZ(\cC)\simeq \overline{\cZ(\cC)}$.
+\end{prop}
+\begin{proof}\Note{I don't know the proof. This might use a bit of module-theory, in which case it needs to wait.}
+\end{proof}
+
+\begin{rem}
+Proposition \ref{time-reversal-centers} gives a first relationship between the quantum double construction and time reversal. Namely, it shows that the quantum double construction allows one to generate many modular categories which are equilvalent to their time-reversal conjugates. Often times such categories are called {\em time reversal symmetric}. We remark that there are examples of time reversal symmetric modular categories which are not quantum double categories \cite{geiko2024does}.
+\end{rem}
+
 We can now explain the relationship between time-reversal and quantum double modular categories. For all pre-modular categories $\cC$, there is a functor of pre-modular categories $\cC\to \cZ(\cC)$ which takes an object $A\in \cC$ and associates to it the half-braiding $\upbeta_{A,\dash}=\beta_{A,\dash}$. Similarly, there is a functor of pre-modular categories $\overline{\cC}\to\cZ(\cC)$ which assigns to $A\in \cC$ the half-braiding $\upbeta_{A,\dash}=\beta_{\dash,A}^{-1}$. Putting these together, we get a functor of pre-modular categories
 
 $$\cC\boxtimes \overline{\cC}\xrightarrow{} \cZ(\cC).$$
@@ -2294,18 +2313,6 @@ This map is at the heart of understanding $\cZ(\cC)$ for modular categories $\cC
 
 \begin{rem} Theorem \ref{factorizability-theorem} is fantastic because it not only computes $\cZ(\cC)$ for every modular category $\cC$, but also it gives an equivalent definition of modularity. We can combine this result with Bruguieres's modularity theorem (theorem \ref{bruguieres-theorem}) to get three equivalent definitiosn of modularity. Namely a pre-modular category $\cC$ is modular if and only if its braidings are all non-degenerate, or equivalently if its $S$-matrix is non-degenerate, or equivalently if the functor $\cC\boxtimes \overline{\cC}\to \cZ(\cC)$ is an equivalence. We often refer to the condition that $\cC\boxtimes \overline{\cC}\to \cZ(\cC)$ as the {\em factorizability} condition, and we summarize theorem \ref{factorizability-theorem} as saying that a pre-modular category is modular if and only if it is factorizable.
 \end{rem}
-
-\begin{rem}
-One might wonder why we don't define the time-reversal conjugate of an anyon theory in terms of its opposite category $\cC^{\op}$, because naively the opposite category is in a real sense reversing causality. The answer for this is as follows. Given a monoidal category $\cC$, one can endow $\cC^{\op}$ with the structure of a monoidal category by the formula $A^{\op}\otimes^{\op}B^{\op}=(B\otimes A)^{\op}$, carrying through the associativity and unit maps. Given a braiding on $\cC$, on then naturally gets a braiding on $\cC^{\op}$ by the formula $\beta_{A^{\op},B^{\op}}^{\op}=\beta_{A,B}^{\op}$. Passing through the rest of the structure, one can show that the opposite of a spherical fusion (resp. pre-modular, modular) category is naturally a spherical fusion (resp. pre-modular, modular) category. Thus, $\cC^{\op}$ {\em is} a valid guess as the definition of the time reversal conjugate. However, it is straightforward to show that $\cC^{\op}\simeq \cC$ as pre-modular categories for all pre-modular categories! (\cite{etingof2016tensor}, Exercise 8.1.9). This shows at at mathematical level why $\cC^{\op}$ is not a good choice of time reversal conjugate.
-\end{rem}
-
-
-\subsubsection{Levin-Wen model}
-
-\Note{: work though the Levin-Wen model.
-I think that this model is fantastic because it shows how all of the ideas of tensor category theory can manifest themselves extremely concretelely on the level of gapped Hamiltonians. Namely, the coherence relations on the category theory side correspond exactly the the formulas needed to make terms in a Hamiltonian commute with one another. It would be nice if I could give a motivation for which the category which describes the Levin-Wen model is the Drinfeld center, though I've never seen that before.}
-
-\Note{This section is a good time to talk a bit more about chirality. All quantum double modular categories are time-reversal symmetric, but there are time-reversal symmetric modular categories which are not quantum doubles. There should be an example in the anyon-data subsection.}
 
 
 

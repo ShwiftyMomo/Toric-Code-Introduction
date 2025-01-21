@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 JAN 2025 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 JAN 2025 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1352,20 +1352,15 @@ Overfull \hbox (31.23927pt too wide) detected at line 1749
 (./figures/kirby-color-lemma.tikz) (./figures/kirby-color-second.tikz) [159]
 (./figures/modularity-proof.tikz) (./figures/modularity-computation-1.tikz)
 [160] [161] [162] [163] [164] [165] [166]
-Overfull \hbox (15.92151pt too wide) in paragraph at lines 2233--2234
+Overfull \hbox (15.92151pt too wide) in paragraph at lines 2239--2240
 []\OT1/lmr/m/n/10 Thus, we have nat-u-rally as-so-ci-ated to $(\OML/lmm/m/it/10
  V; \U/eur/m/n/10 ^^L[]\OT1/lmr/m/n/10 )$ the struc-ture of a $\OML/lmm/m/it/10
  G$\OT1/lmr/m/n/10 -graded $\OML/lmm/m/it/10 G$\OT1/lmr/m/n/10 -representation.
 
  []
 
-[167] [168] [169] [170]
-
-LaTeX Warning: Citation `ng2019higher' on page 171 undefined on input line 2396
-.
-
-[171]
-Underfull \hbox (badness 10000) in paragraph at lines 2436--2437
+[167] [168] [169] [170] [171]
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2444
 
  []
 
@@ -1426,14 +1421,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
 ]
 \openout2 = `./chapters/A-anyon-data/appA.aux'.
 
- (./chapters/A-anyon-data/appA.tex
+ (./chapters/A-anyon-data/appA.tex) [209
 
-LaTeX Warning: Citation `geiko2024does' on page 209 undefined on input line 20.
-
-
-) [209
-
-] (./Algebraic-TQC.bbl [210
+] (./Algebraic-TQC.bbl
+[210
 
 ] [211] [212] [213]
 Underfull \hbox (badness 1253) in paragraph at lines 351--355
@@ -1455,10 +1446,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22626 strings out of 492649
- 488847 string characters out of 6129622
- 571460 words of memory out of 5000000
- 25645 multiletter control sequences out of 15000+600000
+ 22630 strings out of 492649
+ 488916 string characters out of 6129622
+ 571495 words of memory out of 5000000
+ 25649 multiletter control sequences out of 15000+600000
  116347 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,30n,86p,1849b,1104s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1502,7 +1493,7 @@ ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2018/texm
 f-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/rsfs/rsfs5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/rsfs/rsfs7.pfb>
-Output written on Algebraic-TQC.pdf (223 pages, 39613953 bytes).
+Output written on Algebraic-TQC.pdf (223 pages, 39615053 bytes).
 PDF statistics:
  929 PDF objects out of 1000 (max. 8388607)
  621 compressed objects within 7 object streams

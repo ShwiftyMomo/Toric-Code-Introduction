@@ -525,6 +525,13 @@ Davide Gaiotto and Theo Johnson-Freyd.
 \newblock Symmetry protected topological phases and generalized cohomology.
 \newblock {\em Journal of High Energy Physics}, 2019(5):1--36, 2019.
 
+\bibitem[GM24]{geiko2024does}
+Roman Geiko and Gregory~W Moore.
+\newblock When does a three-dimensional chern--simons--witten theory have a
+  time reversal symmetry?
+\newblock In {\em Annales Henri Poincar{\'e}}, volume~25, pages 673--714.
+  Springer, 2024.
+
 \bibitem[GN08]{gelaki2008nilpotent}
 Shlomo Gelaki and Dmitri Nikshych.
 \newblock Nilpotent fusion categories.
@@ -785,6 +792,12 @@ Jacob Lurie.
 \newblock On the classification of topological field theories.
 \newblock {\em Current developments in mathematics}, 2008(1):129--280, 2008.
 
+\bibitem[LW05]{levin2005string}
+Michael~A Levin and Xiao-Gang Wen.
+\newblock String-net condensation: A physical mechanism for topological phases.
+\newblock {\em Physical Review B—Condensed Matter and Materials Physics},
+  71(4):045110, 2005.
+
 \bibitem[Lyu95]{lyubashenko1995invariants}
 Volodymyr~V Lyubashenko.
 \newblock Invariants of 3-manifolds and projective representations of mapping
@@ -899,6 +912,11 @@ Chetan Nayak, Steven~H Simon, Ady Stern, Michael Freedman, and Sankar
   Das~Sarma.
 \newblock Non-abelian anyons and topological quantum computation.
 \newblock {\em Reviews of Modern Physics}, 80(3):1083--1159, 2008.
+
+\bibitem[NSW19]{ng2019higher}
+Siu-Hung Ng, Andrew Schopieray, and Yilong Wang.
+\newblock Higher gauss sums of modular categories.
+\newblock {\em Selecta Mathematica}, 25(4):53, 2019.
 
 \bibitem[Ost03]{ostrik2003module}
 Victor Ostrik.

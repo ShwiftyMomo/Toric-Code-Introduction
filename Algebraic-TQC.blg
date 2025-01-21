@@ -15,49 +15,50 @@ Database file #1: ref.bib
 Warning--to sort, need author or key in google2023suppressing
 Warning--empty journal in copeland1997church
 Warning--can't use both volume and number fields in de2022non
+Warning--can't use both volume and number fields in geiko2024does
 Warning--empty author in google2023suppressing
 Warning--can't use both volume and number fields in jaeger1990computational
 Warning--there's a number but no series in wang2010topological
 Warning--empty year in wang2307intrinsic
-You've used 208 entries,
+You've used 211 entries,
             2543 wiz_defined-function locations,
-            1669 strings with 35305 characters,
-and the built_in function-call counts, 82522 in all, are:
-= -- 8263
-> -- 4066
-< -- 94
-+ -- 1406
-- -- 1380
-* -- 6331
-:= -- 13854
-add.period$ -- 632
-call.type$ -- 208
-change.case$ -- 1314
-chr.to.int$ -- 206
-cite$ -- 216
-duplicate$ -- 3088
-empty$ -- 5795
-format.name$ -- 1634
-if$ -- 16440
+            1681 strings with 35701 characters,
+and the built_in function-call counts, 83872 in all, are:
+= -- 8402
+> -- 4129
+< -- 96
++ -- 1427
+- -- 1401
+* -- 6433
+:= -- 14068
+add.period$ -- 642
+call.type$ -- 211
+change.case$ -- 1333
+chr.to.int$ -- 209
+cite$ -- 220
+duplicate$ -- 3142
+empty$ -- 5893
+format.name$ -- 1658
+if$ -- 16724
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 222
-newline$ -- 1043
-num.names$ -- 621
-pop$ -- 975
+missing$ -- 225
+newline$ -- 1058
+num.names$ -- 630
+pop$ -- 988
 preamble$ -- 1
-purify$ -- 1540
+purify$ -- 1562
 quote$ -- 0
-skip$ -- 2582
+skip$ -- 2632
 stack$ -- 0
-substring$ -- 4816
-swap$ -- 321
-text.length$ -- 94
+substring$ -- 4893
+swap$ -- 336
+text.length$ -- 96
 text.prefix$ -- 64
 top$ -- 0
-type$ -- 1596
-warning$ -- 7
-while$ -- 819
-width$ -- 211
-write$ -- 2680
-(There were 7 warnings)
+type$ -- 1620
+warning$ -- 8
+while$ -- 833
+width$ -- 214
+write$ -- 2721
+(There were 8 warnings)

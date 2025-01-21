@@ -80,8 +80,7 @@
 \contentsline {subsubsection}{\numberline {5.6.1}The Drinfeld center}{164}
 \contentsline {subsubsection}{\numberline {5.6.2}Mueger's theorem}{166}
 \contentsline {subsubsection}{\numberline {5.6.3}Discrete gauge theory as a quantum double and Morita equivalence}{166}
-\contentsline {subsubsection}{\numberline {5.6.4}Factorizability and time reversal}{167}
-\contentsline {subsubsection}{\numberline {5.6.5}Levin-Wen model}{169}
+\contentsline {subsubsection}{\numberline {5.6.4}Factorizability and time reversal}{168}
 \contentsline {subsection}{\numberline {5.7}Skeletonization}{169}
 \contentsline {subsubsection}{\numberline {5.7.1}Principle}{169}
 \contentsline {subsubsection}{\numberline {5.7.2}$F$-symbols}{170}
@@ -107,7 +106,7 @@
 \contentsline {subsubsection}{\numberline {6.2.2}Boundaries and domain walls in the toric code}{177}
 \contentsline {subsubsection}{\numberline {6.2.3}The algebraic theory of gapped boundaries}{177}
 \contentsline {subsubsection}{\numberline {6.2.4}Lagrangian algebras and algebra objects}{178}
-\contentsline {subsubsection}{\numberline {6.2.5}Module categories and boundaries in the Levin-Wen model}{179}
+\contentsline {subsubsection}{\numberline {6.2.5}Module and bimodule categories}{179}
 \contentsline {subsubsection}{\numberline {6.2.6}The Drinfeld center via bimodules}{186}
 \contentsline {subsubsection}{\numberline {6.2.7}Muger's theorem and Lagrange's theorem for fusion categories}{188}
 \contentsline {subsubsection}{\numberline {6.2.8}Skeletonization of gapped boundaries}{189}
